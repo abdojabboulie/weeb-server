@@ -1,0 +1,16 @@
+<h1>Login</h1>
+<% if (messages.error) { %>
+  <%= messages.error %>
+<% } %>
+<form action="/login" method="POST">
+  <div>
+    <label for="email">your damn email</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="password">pass</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <button type="submit">Login ,senpai!</button>
+</form>
+<a href="/register">if wanna go back to rigester , click here , oni chan!</a>
